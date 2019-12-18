@@ -45,3 +45,8 @@
 .card > .remove:hover {
   color: #d50000;
 }
+
+.hero-img{
+  width: 150px;
+  height: 150px;
+}
