@@ -6,7 +6,7 @@ import Wrapper from "./components/Wrapper";
 import SuperheroCard from "./components/SuperheroCard";
 import Navbar from "./components/Navbar";
 import Superheros from "./superheros.json";
-// import Counter from './components/Counter/Counter';
+import Footer from "./components/Footer";
 
 class App extends React.Component {
   state = {
@@ -68,8 +68,9 @@ class App extends React.Component {
   render() {
 
     return (
-      <div>
+      <div className="body">
         <Navbar count={this.state.Score} highcount={this.state.HighScore} message={this.state.message}/>
+        <br></br>
         <Wrapper>
 
 
@@ -79,13 +80,14 @@ class App extends React.Component {
             <SuperheroCard
               key={item.id}
               id={item.id}
-              name={item.name}
+              // name={item.name}
               image={item.image}
               ClickedImage={() => this.ClickedImage(item.id)}
             />
           ))}
 
         </Wrapper>
+        <Footer/>
       </div>
     );
   }

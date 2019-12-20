@@ -1,5 +1,5 @@
-//changing this too!
 import React from "react";
+import "./style.css";
 
 // By extending the React.Component class, Navbar inherits functionality from it
 function Navbar(props) {

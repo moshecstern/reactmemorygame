@@ -1,0 +1,8 @@
+.navbar {
+    background-color: firebrick;
+    /* margin: 14px; */
+    font-weight: bold;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+}
